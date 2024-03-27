@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:id="@+id/layout_pm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+<!--            android:layout_toLeftOf="@id/img_edit_student"-->
+
+            <TextView
+                android:id="@+id/tv_id_dis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_ten_dis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên Loại: CNTT"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"  />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_dtb_student"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Nhà Cung Cấp: Kim Đồng"-->
+<!--                android:textSize="17dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/black"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/image_avatar"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:layout_marginBottom="8dp"/>-->
+<!--        </LinearLayout>-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_xoa_dis"
+            android:src="@drawable/baseline_delete_forever_24"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_edit_dis"
+            android:src="@drawable/baseline_edit_24"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/img_xoa_dis"
+            android:padding="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
